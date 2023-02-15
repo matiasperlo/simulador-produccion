@@ -276,8 +276,97 @@
 <context>
     <name>Params</name>
     <message>
-        <location filename="src/ui/params.ui" line="16"/>
-        <source>Form</source>
+        <location filename="src/ui/params.ui" line="26"/>
+        <source>Parametros</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="38"/>
+        <source>Coef. de Producción Anual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="53"/>
+        <location filename="src/ui/params.ui" line="252"/>
+        <location filename="src/ui/params.ui" line="335"/>
+        <location filename="src/ui/params.ui" line="418"/>
+        <source>D. Soleado</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="69"/>
+        <location filename="src/ui/params.ui" line="278"/>
+        <location filename="src/ui/params.ui" line="361"/>
+        <location filename="src/ui/params.ui" line="444"/>
+        <source>D. Lluvia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="85"/>
+        <location filename="src/ui/params.ui" line="294"/>
+        <location filename="src/ui/params.ui" line="377"/>
+        <location filename="src/ui/params.ui" line="460"/>
+        <source>D.Nublado</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="101"/>
+        <source>D.Tardanza</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="158"/>
+        <source>Semillas de Generadores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="173"/>
+        <source>S. Climas</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="199"/>
+        <source>S. Tardanza</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="230"/>
+        <source>Dia Soleado</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="313"/>
+        <source>Dia Lluvioso</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="396"/>
+        <source>Dia Nublado</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="488"/>
+        <source>Probabilidades de cambio de clima</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="511"/>
+        <source>Media dias de tardanza fert.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="527"/>
+        <source>Cargar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="540"/>
+        <source>Restablecer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/params.ui" line="576"/>
+        <source>Cantidad Anios</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

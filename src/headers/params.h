@@ -15,6 +15,10 @@ public:
     explicit Params(QWidget *parent = nullptr);
     ~Params();
 
+public slots:
+    void slotValidarCampos();
+    void slotRestablecerCampos();
+
 private:
     Ui::Params *ui;
 };

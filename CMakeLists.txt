@@ -23,10 +23,6 @@ set(PROJECT_SOURCES
         src/headers/mainwindow.h
         src/ui/mainwindow.ui
 
-        src/classes/form.cpp
-        src/headers/form.h
-        src/ui/form.ui
-
         src/classes/params.cpp
         src/headers/params.h
         src/ui/params.ui
