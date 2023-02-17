@@ -18,6 +18,7 @@ set(TS_FILES Simulacion_es_AR.ts)
 
 set(PROJECT_SOURCES
         src/main.cpp
+	src/main2.cpp
 
         src/classes/mainwindow.cpp
         src/headers/mainwindow.h
