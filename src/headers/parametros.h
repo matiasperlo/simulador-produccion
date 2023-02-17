@@ -4,26 +4,35 @@
 
 class Parametros
 {
-    float cant_anios = 0;
-    float coef_soleado =   0;
-    float coef_lluvia =    0;
-    float coef_nublado =   0;
-    float coef_tardanza =  0;
-
-    int seed_climas =    0;
-    int seed_tardanzas = 0;
-
-    // TODO : ver como poronga se manejan las listas.
-    //float prob_despues_de_dia_soleado =  [0, 0, 0];
-    //float prob_despues_de_dia_lluvia =   [0, 0, 0];
-    //float prob_despues_de_dia_nublado =  [0, 0, 0];
-
-    float media_dias_tardanza_fertilizante = 0;
-
 public:
     Parametros();
+    void setValoresPorDefecto();
 
-    Parametros getDefault();
+    // Años que se calculan.
+    int cant_anios;
+
+    // Coeficientes para los tipos de dias.
+    int coef_soleado;
+    int coef_lluvia;
+    int coef_nublado;
+
+    // Coeficientes para la tardanza.
+    int coef_tardanza;
+
+    // Seeds para los generadores de números.
+    int seed_climas;
+    int seed_tardanzas;
+
+    // Probabilidad exhaustiva de los tipos de días.
+    float prob_despues_de_dia_soleado[3];
+    float prob_despues_de_dia_lluvia [3];
+    float prob_despues_de_dia_nublado[3];
+
+    // Media de días de tardanza del fertilizante.
+    float media_dias_tardanza_fertilizante = 0;
+
+
+
 };
 
 #endif // PARAMETROS_H
