@@ -27,6 +27,10 @@ set(PROJECT_SOURCES
         src/headers/params.h
         src/ui/params.ui
 
+        src/classes/ejercicio.cpp
+        src/headers/ejercicio.h
+        src/ui/ejercicio.ui
+
         src/classes/negocio/dia.cpp
         src/headers/dia.h
 
@@ -41,6 +45,8 @@ set(PROJECT_SOURCES
 
         src/classes/soporte/parametros.cpp
         src/headers/parametros.h
+
+
 
 
         src/assets/ejercicio.qrc
