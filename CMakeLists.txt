@@ -27,21 +27,15 @@ set(PROJECT_SOURCES
         src/headers/params.h
         src/ui/params.ui
 
-        src/classes/negocio/dia.cpp
-        src/headers/dia.h
-
-        src/classes/negocio/tardanza.cpp
-        src/headers/tardanza.h
+        src/classes/ejercicio.cpp
+        src/headers/ejercicio.h
+        src/ui/ejercicio.ui
 
         src/classes/negocio/simulador.cpp
         src/headers/simulador.h
 
-        src/classes/negocio/produccion.cpp
-        src/headers/produccion.h
-
         src/classes/soporte/parametros.cpp
         src/headers/parametros.h
-
 
         src/assets/ejercicio.qrc
         ${TS_FILES}

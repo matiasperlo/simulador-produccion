@@ -2,6 +2,26 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="es_AR">
 <context>
+    <name>Ejercicio</name>
+    <message>
+        <location filename="src/ui/ejercicio.ui" line="26"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ui/ejercicio.ui" line="38"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;title&gt;Document&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/imagenes/imgs/problema.png&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Form</name>
     <message>
         <location filename="src/ui/form.ui" line="16"/>
@@ -272,6 +292,19 @@
         <source>Sobre El Ejercicio</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="src/classes/mainwindow.cpp" line="82"/>
+        <location filename="src/classes/mainwindow.cpp" line="86"/>
+        <location filename="src/classes/mainwindow.cpp" line="91"/>
+        <location filename="src/classes/mainwindow.cpp" line="92"/>
+        <location filename="src/classes/mainwindow.cpp" line="93"/>
+        <location filename="src/classes/mainwindow.cpp" line="95"/>
+        <location filename="src/classes/mainwindow.cpp" line="96"/>
+        <location filename="src/classes/mainwindow.cpp" line="97"/>
+        <location filename="src/classes/mainwindow.cpp" line="98"/>
+        <source>%1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Params</name>
@@ -367,6 +400,27 @@
     <message>
         <location filename="src/ui/params.ui" line="576"/>
         <source>Cantidad Anios</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/classes/params.cpp" line="32"/>
+        <location filename="src/classes/params.cpp" line="35"/>
+        <location filename="src/classes/params.cpp" line="36"/>
+        <location filename="src/classes/params.cpp" line="37"/>
+        <location filename="src/classes/params.cpp" line="40"/>
+        <location filename="src/classes/params.cpp" line="43"/>
+        <location filename="src/classes/params.cpp" line="44"/>
+        <location filename="src/classes/params.cpp" line="47"/>
+        <location filename="src/classes/params.cpp" line="48"/>
+        <location filename="src/classes/params.cpp" line="49"/>
+        <location filename="src/classes/params.cpp" line="51"/>
+        <location filename="src/classes/params.cpp" line="52"/>
+        <location filename="src/classes/params.cpp" line="53"/>
+        <location filename="src/classes/params.cpp" line="55"/>
+        <location filename="src/classes/params.cpp" line="56"/>
+        <location filename="src/classes/params.cpp" line="57"/>
+        <location filename="src/classes/params.cpp" line="60"/>
+        <source>%1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
