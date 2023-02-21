@@ -15,6 +15,8 @@ class Params : public QWidget
     Q_OBJECT
 
 public:
+    Parametros *parametros;
+
     explicit Params(QWidget *parent = nullptr);
     ~Params();
 
@@ -28,7 +30,7 @@ public slots:
 private:
     Ui::Params *ui;
 
-    Parametros *parametros;
+
     QRegExpValidator *validator_coef;
     QRegExpValidator *validator_ent_positivo;
     QRegExpValidator *validator_proporcion;
