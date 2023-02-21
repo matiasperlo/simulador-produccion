@@ -18,7 +18,6 @@ set(TS_FILES Simulacion_es_AR.ts)
 
 set(PROJECT_SOURCES
         src/main.cpp
-	src/main2.cpp
 
         src/classes/mainwindow.cpp
         src/headers/mainwindow.h
@@ -32,23 +31,11 @@ set(PROJECT_SOURCES
         src/headers/ejercicio.h
         src/ui/ejercicio.ui
 
-        src/classes/negocio/dia.cpp
-        src/headers/dia.h
-
-        src/classes/negocio/tardanza.cpp
-        src/headers/tardanza.h
-
         src/classes/negocio/simulador.cpp
         src/headers/simulador.h
 
-        src/classes/negocio/produccion.cpp
-        src/headers/produccion.h
-
         src/classes/soporte/parametros.cpp
         src/headers/parametros.h
-
-
-
 
         src/assets/ejercicio.qrc
         ${TS_FILES}

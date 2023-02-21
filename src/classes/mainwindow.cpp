@@ -1,5 +1,6 @@
 #include "../headers/mainwindow.h"
 #include "../ui/ui_mainwindow.h"
+#include "src/headers/simulador.h"
 #include <iostream>
 #include <QRegExpValidator>
 
@@ -61,7 +62,42 @@ void MainWindow::deshabilitarIrA()
 void MainWindow::slotGenerarSimulacion()
 {
     this->slotLimpiarContenido();
-    std::cout << "Hello Simulacion!\n";
+    char const *climas[3] = {"Soleado", "Lluvia", "Nublado"};
+    Parametros *p = this->vtnParams->parametros;
+    Simulador s(p);
+    vectorEstado v;
+
+    for (int i=0; i < p->cant_anios; i++){
+        v = s.ejecutarSimulacion();
+
+        // por cuestiones de rendimiento
+        // solo grabo los ultimos 40 resultados
+        if (i < p->cant_anios -40){
+            continue;
+        }
+
+        // Logica para cargarlo a la tabla
+        ui->tablaResultados->insertRow(ui->tablaResultados->rowCount());
+
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 0, new QTableWidgetItem(tr("%1").arg(v.anio)));
+
+        int dia = 0;
+        for (int j = 0; j< 20; j+=2){
+            ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 1 + j, new QTableWidgetItem(tr("%1").arg(v.dias[dia].rnd_clima)));
+            ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 2 + j, new QTableWidgetItem(climas[v.dias[dia].clima]));
+            dia++;
+        }
+
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 21, new QTableWidgetItem(tr("%1").arg(v.cant_dias_soleado)));
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 22, new QTableWidgetItem(tr("%1").arg(v.cant_dias_lluviosos)));
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 23, new QTableWidgetItem(tr("%1").arg(v.cant_dias_nublado)));
+
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 24, new QTableWidgetItem(tr("%1").arg(v.rnd_tardanza)));
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 25, new QTableWidgetItem(tr("%1").arg(v.tardanza)));
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 26, new QTableWidgetItem(tr("%1").arg(v.produccion_total_anual)));
+        ui->tablaResultados->setItem(ui->tablaResultados->rowCount() - 1, 27, new QTableWidgetItem(tr("%1").arg(v.produccion_total_anual_ac)));
+
+    }
 
     this->habilitarIrA();
 }

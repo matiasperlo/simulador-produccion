@@ -24,15 +24,11 @@ public:
     int seed_tardanzas;
 
     // Probabilidad exhaustiva de los tipos de días.
-    float prob_despues_de_dia_soleado[3];
-    float prob_despues_de_dia_lluvia [3];
-    float prob_despues_de_dia_nublado[3];
+    float probs[3][3];
+    float probs_primer_dia[3] = {0.33f, 0.33f, 0.34f};
 
     // Media de días de tardanza del fertilizante.
     float media_dias_tardanza_fertilizante = 0;
-
-
-
 };
 
 #endif // PARAMETROS_H

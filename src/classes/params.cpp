@@ -44,17 +44,17 @@ void Params::cargarParametros()
     ui->txtSeedTardanza->setText(tr("%1").arg(parametros->seed_tardanzas));
 
     // Probabilidades por cada dia
-    ui->Prob_DS_DS->setText(tr("%1").arg(parametros->prob_despues_de_dia_soleado[0]));
-    ui->Prob_DS_DL->setText(tr("%1").arg(parametros->prob_despues_de_dia_soleado[1]));
-    ui->Prob_DS_DN->setText(tr("%1").arg(parametros->prob_despues_de_dia_soleado[2]));
+    ui->Prob_DS_DS->setText(tr("%1").arg(parametros->probs[0][0]));
+    ui->Prob_DS_DL->setText(tr("%1").arg(parametros->probs[0][1]));
+    ui->Prob_DS_DN->setText(tr("%1").arg(parametros->probs[0][2]));
 
-    ui->Prob_DL_DS->setText(tr("%1").arg(parametros->prob_despues_de_dia_lluvia[0]));
-    ui->Prob_DL_DL->setText(tr("%1").arg(parametros->prob_despues_de_dia_lluvia[1]));
-    ui->Prob_DL_DN->setText(tr("%1").arg(parametros->prob_despues_de_dia_lluvia[2]));
+    ui->Prob_DL_DS->setText(tr("%1").arg(parametros->probs[1][0]));
+    ui->Prob_DL_DL->setText(tr("%1").arg(parametros->probs[1][1]));
+    ui->Prob_DL_DN->setText(tr("%1").arg(parametros->probs[1][2]));
 
-    ui->Prob_DN_DS->setText(tr("%1").arg(parametros->prob_despues_de_dia_nublado[0]));
-    ui->Prob_DN_DL->setText(tr("%1").arg(parametros->prob_despues_de_dia_nublado[1]));
-    ui->Prob_DN_DN->setText(tr("%1").arg(parametros->prob_despues_de_dia_nublado[2]));
+    ui->Prob_DN_DS->setText(tr("%1").arg(parametros->probs[2][0]));
+    ui->Prob_DN_DL->setText(tr("%1").arg(parametros->probs[2][1]));
+    ui->Prob_DN_DN->setText(tr("%1").arg(parametros->probs[2][2]));
 
     // Media de tardanza
     ui->txtMediaTardanza->setText(tr("%1").arg(parametros->media_dias_tardanza_fertilizante));
@@ -128,12 +128,6 @@ bool Params::validar()
         }
     }
 
-    std::cout
-            << ui->Prob_DS_DS->text().toFloat()
-            << ui->Prob_DS_DL->text().toFloat()
-            << ui->Prob_DS_DN->text().toFloat()
-            << std::endl;
-
     float total_prob_DS =
             ui->Prob_DS_DS->text().toFloat() +
             ui->Prob_DS_DL->text().toFloat() +
@@ -171,17 +165,17 @@ void Params::guardarParametros()
     parametros->seed_climas     = ui->txtSeedClima->text().toInt();
     parametros->seed_tardanzas  = ui->txtSeedTardanza->text().toInt();
 
-    parametros->prob_despues_de_dia_soleado[0] = ui->Prob_DS_DS->text().toFloat();
-    parametros->prob_despues_de_dia_soleado[1] = ui->Prob_DS_DL->text().toFloat();
-    parametros->prob_despues_de_dia_soleado[2] = ui->Prob_DS_DN->text().toFloat();
+    parametros->probs[0][0] = ui->Prob_DS_DS->text().toFloat();
+    parametros->probs[0][1] = ui->Prob_DS_DL->text().toFloat();
+    parametros->probs[0][2] = ui->Prob_DS_DN->text().toFloat();
 
-    parametros->prob_despues_de_dia_lluvia[0] = ui->Prob_DL_DS->text().toFloat();
-    parametros->prob_despues_de_dia_lluvia[1] = ui->Prob_DL_DL->text().toFloat();
-    parametros->prob_despues_de_dia_lluvia[2] = ui->Prob_DL_DN->text().toFloat();
+    parametros->probs[1][0] = ui->Prob_DL_DS->text().toFloat();
+    parametros->probs[1][1] = ui->Prob_DL_DL->text().toFloat();
+    parametros->probs[1][2] = ui->Prob_DL_DN->text().toFloat();
 
-    parametros->prob_despues_de_dia_nublado[0] = ui->Prob_DN_DS->text().toFloat();
-    parametros->prob_despues_de_dia_nublado[1] = ui->Prob_DN_DL->text().toFloat();
-    parametros->prob_despues_de_dia_nublado[2] = ui->Prob_DN_DN->text().toFloat();
+    parametros->probs[2][0] = ui->Prob_DN_DS->text().toFloat();
+    parametros->probs[2][1] = ui->Prob_DN_DL->text().toFloat();
+    parametros->probs[2][2] = ui->Prob_DN_DN->text().toFloat();
 
     parametros->media_dias_tardanza_fertilizante = ui->txtMediaTardanza->text().toInt();
 }
